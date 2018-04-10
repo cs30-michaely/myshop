@@ -10,9 +10,8 @@ margin: auto;
 }
 
 header {
-  background-color: darkgrey;
+  background-image: url(img/kinda_grey.jpg);
   overflow: auto;
-  border: 1px solid darkgrey;
 }
 
 #bar {
@@ -63,17 +62,17 @@ h2 {
 }
 
 .product {
-  background-color: darkgrey;
+  background-image: url(img/kinda_grey.jpg);
   overflow: auto;
   padding: 25px 25px 25px 25px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px;
   float: left;
   border: 1px solid darkgrey;
   border-radius: 10px;
 }
 
 .productImg {
-  width: 250px;
+  width: px;
   height: 300px;
 }
 
