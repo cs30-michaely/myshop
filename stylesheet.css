@@ -1,0 +1,88 @@
+html {
+  background-image: url("img/black_bg.png");
+}
+
+body {
+/*border: 1px solid red;*/
+width: 1000px;
+background-color: gainsboro;
+margin: auto;
+}
+
+header {
+  background-color: darkgrey;
+  overflow: auto;
+  border: 1px solid darkgrey;
+}
+
+#bar {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  overflow: hidden;
+  width: 500px;
+  float: right;
+}
+
+.sections {
+  display: inline;
+  float: left;
+  width: 100px;
+  text-align: center;
+
+}
+
+.sections a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.sections a:hover {
+  background-color: grey;
+}
+
+#logo {
+  width: 100px;
+  height: 75px;
+  float: left;
+  margin-left: 25px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 75px 0px 75px;
+  color: 
+  border: 1px solid red;
+}
+
+#newproducts {
+  background-color: rgb(51, 0, 0);
+}
+
+.product {
+  background-color: darkgrey;
+  overflow: auto;
+  padding: 25px 25px 25px 25px;
+  margin: 0px 5px 0px 5px;
+  float: left;
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+}
+
+.productImg {
+  width: 250px;
+  height: 300px;
+}
+
+button {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+
