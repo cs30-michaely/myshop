@@ -50,11 +50,15 @@ header {
   margin-left: 25px;
 }
 
+form {
+  float: right;
+  margin: 0px 10px 10px 10px;
+}
+
 h2 {
   text-align: center;
   margin: 20px 75px 0px 75px;
   color: 
-  border: 1px solid red;
 }
 
 .product {
@@ -79,6 +83,16 @@ button {
   clear: both;
 }
 
+@font-face {
+  font-family: cutive;
+  src: url(Fonts/Cutive-Regular.ttf);
+}
+
+@font-face {
+  font-family: unna;
+  src: url(Fonts/Unna-Regular.ttf);
+}
+
 #aboutUs {
   background-image: url(img/kinda_grey.jpg);
   overflow: auto;
@@ -86,11 +100,12 @@ button {
 
 #aboutUs h1 {
   text-align: center;
-  text-decoration: underline;
+  font-family: cutive;
   
 }
 #aboutUs h3 { 
-margin: 5px 50px 5px 50px;
+  font-family: unna;
+  margin: 5px 50px 5px 50px;
 }
 
 #survey {
