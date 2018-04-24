@@ -1,5 +1,5 @@
 <?php
-
+    //create connection
     $con = mysqli_connect('127.0.0.1','root','');
     
     if(!$con){
@@ -10,4 +10,4 @@
         echo "Database Not Selected";
     }
 
-</
+</php>

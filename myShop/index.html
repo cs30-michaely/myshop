@@ -22,13 +22,49 @@
   </header>
   <h2 class="clear">New Products</h2>
   <!--  list of products floating left on screen-->
+  <!-- Database (name, descr) -->
+  <?php
+    //create connection
+    $con = mysqli_connect('127.0.0.1','root','');
+    
+    if(!$con){
+        echo "Not Connected to database";
+    }
+
+    if (!mysqli_select_db($con, 'products')){
+        echo "Database Not Selected";
+    }
+
+  ?>
+  
+  
+  
+  
+  
+  
   <div class="product">
+    <h2>Name</h2>
     <img class="productImg" src="https://www.thesource.ca/medias/L2-CategoryImage-Desktops.jpg?context=bWFzdGVyfGltYWdlc3wyMjIwNnxpbWFnZS9qcGVnfGltYWdlcy9oOGQvaGRkLzg4Mzc3NTk3NjI0NjIuanBnfGIxMDc2MjM3YWRmN2RhNDVkZmQ1ZjRkOTZlN2E1YzVjYjJlZDQ5MjdjMWM1NGM1ZjhjZmViZmY1MjRjMDI1ZTM">
     <p>This is a computer! Info info info...</p>
     <button>More Info</button>
   </div>
   <div class="product">
     <img class="productImg" src="https://www.staples-3p.com/s7/is/image/Staples/s0639227_sc7?">
+    <p>This is a computer! Info info info...</p>
+    <button>More Info</button>
+  </div>
+  <div class="product">
+    <img class="productImg" src="https://www.visions.ca/Images/Catalogue/Product/English/GUA4500INC_l_1.jpg">
+    <p>This is a computer! Info info info...</p>
+    <button>More Info</button>
+  </div>
+  <div class="product">
+    <img class="productImg" src="https://www.visions.ca/Images/Catalogue/Product/English/GUA4500INC_l_1.jpg">
+    <p>This is a computer! Info info info...</p>
+    <button>More Info</button>
+  </div>
+  <div class="product">
+    <img class="productImg" src="https://www.visions.ca/Images/Catalogue/Product/English/GUA4500INC_l_1.jpg">
     <p>This is a computer! Info info info...</p>
     <button>More Info</button>
   </div>
@@ -45,6 +81,8 @@
     <h2 id="survey">Take a survey to discover the type of computer that fits your needs <a href=#>here</a></h2>
     <h2 id="parts">Want to learn more about the parts of a computer and what their basic purpose is? Click <a href=#>here</a></h2>
   </div>
+
+  
 </body>
 
 </html>
