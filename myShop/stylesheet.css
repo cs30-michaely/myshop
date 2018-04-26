@@ -63,15 +63,18 @@ h2 {
 .product {
   background-image: url(img/kinda_grey.jpg);
   overflow: auto;
-  padding: 25px 25px 25px 25px;
+  padding: 5px 25px 25px 25px;
   margin: 5px 16px;
   float: left;
   border-radius: 10px;
+  width: 250px;
+  height: 400px;
 }
 
 .productImg {
-  width: 250px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
+  align-content: center;
 }
 
 button {
