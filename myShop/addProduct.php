@@ -13,7 +13,12 @@
     $Price = $_POST['Price'];
     $Image = $_POST['Img'];
 
-    // Define Query
+	// Check if the Item Name Already Exists
+      $sql = "SELECT Name FROM products WHERE Name= '" . $Name . "'";
+      if (mysqli_query($con, $sql)) {
+        echo "The name "  $Name + " is already in use.";
+      } else {
+        // Define Query
     $sql = "INSERT INTO products (Name,Description,Price,Img) VALUES ('$Name','$Descr','$Price','$Image')"; 
     
     // Insert Into DB
@@ -21,10 +26,14 @@
   echo "<p> Please fill the form fully.</p><br><a href='admin.html'>Return</a>";
   }else{
   if(mysqli_query($con, $sql)){
-      echo "<p>Successfully added a product! click <a href='admin.html'>here</a> to add another";
+      echo "<p>Successfully added a product! click <a href='admin.php'>here</a> to add another";
     }else{
       echo "<p>Failed to add product</p>";
     }
   }
+      }
+
+
+    
   
 ?>

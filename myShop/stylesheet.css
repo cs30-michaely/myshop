@@ -1,12 +1,16 @@
 /*style of all webpages*/
 
+* {
+	box-sizing: border-box;
+}
+
 html {
   background-image: url("img/black_bg.png");
 }
 
 body {
 border: 1px solid red;
-width: 1000px;
+max-width: 1000px;
 background-color: gainsboro;
 margin: auto;
 }
@@ -57,23 +61,32 @@ header {
 h2 {
   text-align: center;
   margin: 20px 75px 0px 75px;
-  color: 
+}
+
+#products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 30px;
 }
 
 .product {
   background-image: url(img/kinda_grey.jpg);
   overflow: auto;
   padding: 5px 25px 25px 25px;
+/*
   margin: 5px 16px;
   float: left;
+*/
   border-radius: 10px;
+/*
   width: 250px;
   height: 400px;
+*/
 }
 
 .productImg {
-  width: 200px;
-  height: 250px;
+  width: 70%;
   align-content: center;
 }
 
@@ -126,5 +139,9 @@ button {
   border-radius: 10px;
   padding: 50px 50px 50px 50px;
   margin: 50px 50px 50px 50px;
+}
+
+.active {
+  border: solid 1px green;
 }
 

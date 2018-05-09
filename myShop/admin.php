@@ -33,8 +33,8 @@
               <textarea>' . $row["Description"] . '</textarea><br>
               <input type="number" value="' . $row["Price"] . '"><br>
               <input type="text" value="' . $row["Img"] . '"><br>
-              <button class="update">Update</button><br>
-              <button>Delete</button><br>
+              <button class="update">Update</button>
+              <button class="delete">Delete</button>
               </div>';
          $productNum++;
        }

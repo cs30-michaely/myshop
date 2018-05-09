@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 
+  <?php $name = "home"; include 'header.php';?>
+  
+<!--
 <head>
-  <title>Shop Home</title>
-  <link rel='stylesheet' type="text/css" href="stylesheet.css">
+	<title>Shop Home</title>
+	<link rel='stylesheet' type="text/css" href="stylesheet.css">
 </head>
 
 <body>
-  <!--  Top navigation bar-->
-  <header>
-    <a><img id='logo' src="img/desktop2.0.png"></a>
+	  Top navigation bar
+	<header>
+		<a><img id='logo' src="img/desktop2.0.png"></a>
 
-    <ul id="bar">
-      <li class="sections"><a href="#">Home</a></li>
-      <li class="sections"><a href="#">Computers</a></li>
-      <li class="sections"><a href="#">Software</a></li>
-      <li class="sections"><a href="login.html">Login</a></li>
-      <li class="sections"><a href="#">Contact Us</a></li>
-    </ul>
+		<ul id="bar">
+			<li class="sections"><a href="#">Home</a></li>
+			<li class="sections"><a href="#">Computers</a></li>
+			<li class="sections"><a href="#">Software</a></li>
+			<li class="sections"><a href="login.html">Login</a></li>
+			<li class="sections"><a href="#">Contact Us</a></li>
+		</ul>
 
-  </header>
-  <h2 class="clear">New Products</h2>
-  <!--  list of products floating left on screen-->
-  <!-- Database (name, descr) -->
-  <?php
+	</header>
+-->
+	<h2 class="clear">New Products</h2>
+	<!--  list of products floating left on screen-->
+	<!-- Database (name, descr) -->
+	<div id="products">
+		<?php
     //create connection
     $con = mysqli_connect('127.0.0.1','root','','products');
     
@@ -54,11 +59,12 @@
     mysqli_close($con);
   ?>
 
+	</div>
 
 
 
 
-    <!--
+	<!--
 
     <div class="product">
       <h2>Name</h2>
@@ -92,14 +98,14 @@
       <button>More Info</button>
     </div>
 -->
-    <p class="clear">fdasfdas</p>
-    <!--  Break in backround and new segment start-->
-    <div id="aboutUs">
-      <h1>The Goal</h1>
-      <h3>When I was looking for a computer there was a large amount of information that I could not understand. My goal is to have a one stop shop where anyone regardless of computer knowledge can find the product that suits their needs and budget the best.</h3>
-      <h2 id="survey">Take a survey to discover the type of computer that fits your needs <a href=#>here</a></h2>
-      <h2 id="parts">Want to learn more about the parts of a computer and what their basic purpose is? Click <a href=#>here</a></h2>
-    </div>
+	<p class="clear">fdasfdas</p>
+	<!--  Break in backround and new segment start-->
+	<div id="aboutUs">
+		<h1>The Goal</h1>
+		<h3>When I was looking for a computer there was a large amount of information that I could not understand. My goal is to have a one stop shop where anyone regardless of computer knowledge can find the product that suits their needs and budget the best.</h3>
+		<h2 id="survey">Take a survey to discover the type of computer that fits your needs <a href=#>here</a></h2>
+		<h2 id="parts">Want to learn more about the parts of a computer and what their basic purpose is? Click <a href=#>here</a></h2>
+	</div>
 
 
 </body>
