@@ -29,7 +29,7 @@
 		$productNum = 1;
        while ($row = mysqli_fetch_assoc($result)) {
         echo '<div id="product' . $productNum . '" class="product">
-              <p>' . $row["Name"] . '</p>
+              <p class="name">' . $row["Name"] . '</p>
               <textarea>' . $row["Description"] . '</textarea><br>
               <input type="number" value="' . $row["Price"] . '"><br>
               <input type="text" value="' . $row["Img"] . '"><br>

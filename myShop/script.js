@@ -7,22 +7,24 @@ $(".delete").on("click", deleteProduct);
 
 // Event Functions
 function updateProduct() {
+    // Store jQuery object of update button that was clicked
 	let curObj = $(this);
 
+    // Build an object to store data that will be sent to server / php
 	let newData = {};
 
-	let nameEl = curObj.siblings("p");
-	newData.name = nameEl.html();
+    // Get product name from paragraph with class="name"
+    newData.name = curObj.siblings("p.name").html();
 
-	let descrEl = curObj.siblings("textarea");
-	newData.descr = descrEl.val();
+    // Get product description from textarea
+	newData.descr = curObj.siblings("textarea").val();
 
-	let priceInputEl = curObj.siblings("input[type='number']");
-	newData.price = priceInputEl.val();
-
-	let imgInputEl = curObj.siblings("input[type='text']");
-	newData.imgUrl = imgInputEl.val();
-
+    // Get product price from input element of type number
+	newData.price = curObj.siblings("input[type='number']").val();
+	
+    // Get product image url from input element of type text
+	newData.imgUrl = curObj.siblings("input[type='text']").val();
+	
 	// Use $().post to send data to a php file that would update database with data
 	$.post("updateProduct.php", newData, function (data, status, xhr) {
 		console.log(data);
@@ -31,10 +33,13 @@ function updateProduct() {
 }
 
 function deleteProduct() {
+    // Store jQuery object of delete button that was clicked
 	let curObj = $(this);
 	
-	let objName = curObj.siblings("p").html();
+    // Get product name from paragraph with class="name"
+	let objName = curObj.siblings("p.name").html();
 
+    // Use $().post to send data to a php file that would delete from database
 	$.post("deleteProduct.php", {name: objName}, function(data, status, xhr) {
 		console.log(data);
 		alert("Data delete is: " + status);
